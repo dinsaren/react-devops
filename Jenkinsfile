@@ -9,7 +9,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 echo '==============build version============='
-                sh 'sudo docker-compose up -d --build'
+                sh 'docker-compose up -d --build'
             }
         }
     }
